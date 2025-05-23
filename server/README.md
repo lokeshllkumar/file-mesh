@@ -18,6 +18,15 @@ cd server
 go mod tidy
 ```
 
+- Set up your environment variables with a .env file
+
+```bash
+MONGO_URI=      # URI to the MongoDB cluster that your DB is hosted on
+SERVER_PORT=    # port number for the backend server to run on
+JWT_SECRET=     # your JWT secret for token generation
+MONGO_DB=       # your MongoDB database's name
+```
+
 - Run the backend server that starts listening on the port numbered ```8080```
 
 ```bash
