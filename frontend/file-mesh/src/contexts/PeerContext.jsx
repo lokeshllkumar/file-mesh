@@ -469,7 +469,7 @@ export const PeerProvider = ({ children }) => {
             fileReaderRef.current = fileReader
 
             const readSlice = (o) => {
-                // Check if transfer has been cancelled
+                // check if transfer has been cancelled
                 if (cancelledTransfersRef.current.has(transferId)) {
                     console.log(`Transfer ${transferId} was cancelled, stopping read`)
                     return
@@ -634,7 +634,7 @@ export const PeerProvider = ({ children }) => {
                         }
                     }
                 } else if (message.type === "cancel-transfer") {
-                    // Handle cancellation message from data channel
+                    // handle cancellation message from data channel
                     handleCancelTransfer(message.transferId)
                 }
             } catch (error) {
