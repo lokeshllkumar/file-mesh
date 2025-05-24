@@ -23,6 +23,7 @@ This project was built with the motive to explore decentralized means of sharing
 - Prerequisites
     - Go 1.20+
     - ReactJS
+    - JavaScript (WebRTC API)
     - MongoDB
     - Any modern web browser that supports JavaScript's WebRTC API
 
